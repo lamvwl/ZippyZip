@@ -15,6 +15,14 @@ mongodb.MongoClient.connect(MONGODB_URI, {
     db = client.db('test');
     coll = db.collection('zips');
 
+    function sigHandler(signal) {
+      console.log(`Received ${signal}`);
+      console.log("Closing Connection...");
+      client.close();
+    }
+
+    process.on('SIGUSR2', sigHandler);
+
     app.listen(3000, process.env.PORT, function () {
       console.log('Server is up...');
     });
