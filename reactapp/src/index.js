@@ -1,12 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import Background from './Background.js';
+import App from './app/App';
 // import Todo from './Todo.js';
 import UImock from './app/UImock.js';
 
 import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.min.css'
+
+ReactDOM.render(
+  <Background />, document.getElementById('bground')
+);
 ReactDOM.render(
   <UImock />, document.getElementById('uimock')
 );
