@@ -38,18 +38,20 @@
 
 }
 
-/*.jumbotron {
- position:relative;
- top: 100px;
- bottom: 25px;
+#jumbotron {
+ /*position:relative;*/
+ /*top: 100px;*/
+ bottom: 13%;
  left: 0px;
  right: 0px;
- background-color: #FFFFFF;
+ /*background-color: #FFFFFF;*/
+ border-radius: 15px;
  margin: 0 auto;
- height: 400px;
- opacity: 1;
- color: #FFFFFF;
-}*/
+ height: 300px;
+ /*opacity: 1;*/
+ /*color: #FFFFFF;*/
+ bottom-margin:25%;
+}
 
 #successbtn {
   background: #20c997;
@@ -110,6 +112,10 @@ transition: all 0.35s ease 0s;
   transition: all 0.35s ease 0s;
 }
 
+#btn-dropdown-toggle-access {
+    border-radius: 33px;
+}
+
 #successbtn span {
   cursor: pointer;
   display: inline-block;
@@ -143,7 +149,6 @@ transition: all 0.35s ease 0s;
   bottom: 100px;
   left: 0px;
   right: 0px;
-
 }
 
 #colcenter {
@@ -155,12 +160,41 @@ transition: all 0.35s ease 0s;
   right: 0px;
 }
 
+#col-dropdown-access-button {
+  z-index: 9999;
+}
+
+#col-dropdown-access-button {
+  animation: shake 0.5s ease 0.5s;
+  animation-iteration-count: 2; 
+  
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  /*10% { transform: translate(-1px, -2px) rotate(-1deg); }*/
+  20% { transform: translate(-3px, 0px) rotate(2deg); }
+  30% { transform: translate(3px, 1px) rotate(0deg); }
+  /*40% { transform: translate(1px, -1px) rotate(1deg); }*/
+  50% { transform: translate(-2px, 2px) rotate(-2deg); }
+  60% { transform: translate(-3px, 0px) rotate(0deg); }
+  /*70% { transform: translate(3px, 1px) rotate(-1deg); }*/
+  /*80% { transform: translate(-1px, -1px) rotate(1deg); }*/
+  90% { transform: translate(2px, 2px) rotate(0deg); }
+  100% { transform: translate(2px, -2px) rotate(-2deg); }
+}
+
+#col-results {
+  z-index: 9999;
+  text-align: center;
+  top:-50px;
+}
+
 .custom-btn-toolbar {
   z-index: 9999;
 }
 
 .dropdown-menu {
-/*#basic-nav-dropdown: {*/
   background-color: transparent !important;
 }
 
@@ -175,10 +209,6 @@ transition: all 0.35s ease 0s;
 
 .modal-footer {
   justify-content: center !important;  
-}
-
-.outerContainer {
-  marginTop: 25%;
 }
 
 #primary-button {
@@ -196,11 +226,6 @@ transition: all 0.35s ease 0s;
 }
 
 #primary-button:hover {
-/*  border-radius: 30px 30px 30px 30px;
-  padding: 14px 28px;
-  border: 2px solid #4CAF50;*/
-
-/*font-size: x-large;*/
 text-align: center;
 font-weight: 500;
 border-radius: 16px;
@@ -258,6 +283,10 @@ transition: all 0.35s ease 0s;
 
 
 .form-control:placeholder {
+}
+
+#results {
+  top: -35%;
 }
 
 #searchbox {
